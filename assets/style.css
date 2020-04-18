@@ -1,0 +1,358 @@
+/* ================================================= CSS Reset ================================================================ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================================================= My Css =================================================================== */
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.reddit-image {
+	height: 50px;
+	background-color: #ffffff;
+}
+
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.search-area {
+    flex-grow: 1;
+    margin: 0 auto;
+	max-width: 690px;
+	text-align: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+.input {
+	position: relative;
+	left: 30px;
+}
+
+.input-search {
+	border-radius: 50px;
+	padding: 10px 50px;
+	background-color: #F6F7F8;
+	border: 1px solid #F6F7F8;
+	outline: currentColor;
+	flex: 1;
+	width: 90%;
+}
+
+.header-class {
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 80;
+	color: #1c1c1c;
+	height: 48px;
+	align-items: center;
+}
+
+.button-right {
+	margin-right: 30px;
+	padding: 2px 20px;
+	font-size: 12px;
+	border-radius: 10px;
+	line-height: 24px;
+	border: 3px solid #3293db;
+	background-color: transparent;
+	font-weight: 700;
+	color: #3293db;
+}
+
+.button-color {
+	background-color: #3293db;
+	color: #ffff;
+}
+
+button:hover {
+	background-color: #D1E7F7;
+	cursor: pointer;
+}
+
+.header-color {
+	background-color: #ffffff;
+}
+
+.section-color {
+	background-color: #FFC033;
+	padding: 55px 0;
+	margin-top: 65px;
+}
+
+.javascript-logo {
+	border-radius: 50%;
+	height: 110px;
+	width: 120px;
+	background-size: cover;
+	margin-top: -15px;
+	border: 2px solid #ffffff;
+}
+
+.javascript-flex {
+	display: flex;
+	align-items: flex-start;
+	padding: 0 16px 0 24px;
+	width: 980px;
+	margin-bottom: 12px;
+	margin-top: -14px;
+}
+
+.javascript-text {
+	color: #1c1c1c;
+	display: inline-block;
+	flex: 1;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 32px;
+	padding: 0 2px 4px 0;
+	text-overflow: ellipsis;
+	width: 100%;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.javascript_header {
+	box-sizing: border-box;
+	display: inline-block;
+	max-width: calc(100% - 96px);
+	padding-right: 24px;
+}
+
+.javascript-sub_header {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #1c1c1c;
+	padding-left: 18px;
+}
+
+.javascript-button {
+	margin-top: 20px;
+	width: 96px;
+	margin-left: 20px;
+}
+
+.javascript-button_join {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	line-height: 24px;
+	text-transform: uppercase;
+	padding: 4px 9px 2px;
+	width: 100%;
+	color: #ffff;
+	background-color: #CC8B00;
+	border: 1px solid #FFC033;
+	outline: none;
+}
+
+.card {
+	background-color: #DAE0E6;
+}
+
+.posts-card {
+	display: flex;
+}
+
+.flex {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.card-info {
+	position: absolute;
+}
+
+.card-vote {
+	width: 40px;
+	border-left: 4px solid transparent;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+	padding: 8px 4px 8px 0;
+}
+
+.card-content {
+	background: rgb(255, 255, 255);
+}
+
+.card-vote_content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.vote-button {
+	height: 24px;
+	width: 24px;
+	background: transparent;
+	border: none;
+	color: inherit;
+	cursor: pointer;
+	padding: initial;
+}
+
+.vote-arrow {
+	height: 100px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.content {
+	color: #1a1a1b;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 16px;
+	pointer-events: none;
+}
+
+.post-content {
+	background: #ffffff;
+	padding-top: 8px;
+}
+
+.pinned {
+	display: flex;
+	align-items: center;
+	margin: 0 8px 14px;
+}
+
+.pinned-icon {
+	color: #75d377;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	vertical-align: text-bottom;
+}
+
+.pinned-text {
+	font-size: 16px;
+	color: #1a1a1b;
+	text-transform: uppercase;
+}
+
+.pinned-heading {
+	font-size: 20px;
+	font-weight: 500;
+	color: #1a1a1b;
+	/* display: flex; */
+	margin-left: 50px;
+}
+
+.pinned-button {
+	margin-left: 10px;
+	border: 1px solid transparent;
+	background: #EDEFF1;
+	color: #1c1c1c;
+	border-radius: 40px;
+}
+
+.pinned-comment {
+	display: flex;
+	justify-content: center;
+	color: #878A8C;
+	margin-top: 20px;
+	justify-content: flex-start;
+	margin-left: 50px;
+}
+
+.comment-icon {
+	cursor: pointer;
+}
+
+.pinned-comment_text {
+	margin-left: 8px;
+	font-size: 14px;
+}
+
+.share-icon {
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.save-icon {
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.card-flex {
+	display: flex;
+}
+
+.js_flex {
+	box-shadow: 1px 1px 1px 1px black;
+	background-color: #ffffff;
+	margin: 20px 350px;
+	padding: 10px 0;
+}
+
+.para {
+	font-size: 16px;
+	font-weight: 300;
+	color: lightslategray;
+}
